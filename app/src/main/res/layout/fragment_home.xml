@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeFragment">
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_gravity="center"
+        >
+       <TableRow
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:gravity="center">
+           <androidx.constraintlayout.widget.ConstraintLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_weight="1"
+               android:layout_margin="5dp">
+
+               <ImageView
+                   android:id="@+id/ivMovie_One"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   tools:src="@drawable/hoteltransylvania"
+                   android:scaleType="fitXY"
+                   app:layout_constraintTop_toTopOf="parent"
+                   app:layout_constraintStart_toStartOf="parent"/>
+
+               <ImageButton
+                   android:id="@+id/imageButton1"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:src="@drawable/ic_baseline_favorite_border_24"
+                   app:layout_constraintBottom_toBottomOf="@id/ivMovie_One"
+                   app:layout_constraintEnd_toEndOf="@id/ivMovie_One" />
+
+               <TextView
+                   android:id="@+id/tvMovie_One"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Hotel Transylvania"
+                   app:layout_constraintTop_toBottomOf="@id/ivMovie_One"
+                   app:layout_constraintStart_toStartOf="@id/ivMovie_One"
+                   app:layout_constraintEnd_toEndOf="@id/ivMovie_One"/>
+
+           </androidx.constraintlayout.widget.ConstraintLayout>
+           <androidx.constraintlayout.widget.ConstraintLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_weight="1"
+               android:layout_margin="5dp">
+
+               <ImageView
+                   android:id="@+id/ivMovie_Twe"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   tools:src="@drawable/thebossbaby"
+                   android:scaleType="fitXY"
+                   app:layout_constraintTop_toTopOf="parent"
+                   app:layout_constraintStart_toStartOf="parent"/>
+
+               <ImageButton
+                   android:id="@+id/imageButton2"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:src="@drawable/ic_baseline_favorite_border_24"
+                   app:layout_constraintBottom_toBottomOf="@id/ivMovie_Twe"
+                   app:layout_constraintEnd_toEndOf="@id/ivMovie_Twe" />
+
+               <TextView
+                   android:id="@+id/tvMovie_Twe"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="The Boss Baby"
+                   app:layout_constraintTop_toBottomOf="@id/ivMovie_Twe"
+                   app:layout_constraintStart_toStartOf="@id/ivMovie_Twe"
+                   app:layout_constraintEnd_toEndOf="@id/ivMovie_Twe"/>
+           </androidx.constraintlayout.widget.ConstraintLayout>
+           <androidx.constraintlayout.widget.ConstraintLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_weight="1"
+               android:layout_margin="5dp">
+
+               <ImageView
+                   android:id="@+id/ivMovie_Three"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:scaleType="fitXY"
+                   tools:src="@drawable/thebeautyandthebeast"
+                   app:layout_constraintTop_toTopOf="parent"
+                   app:layout_constraintStart_toStartOf="parent"/>
+               <ImageButton
+                   android:id="@+id/imageButton3"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:src="@drawable/ic_baseline_favorite_border_24"
+                   app:layout_constraintBottom_toBottomOf="@id/ivMovie_Three"
+                   app:layout_constraintEnd_toEndOf="@id/ivMovie_Three" />
+
+               <TextView
+                   android:id="@+id/tvMovie_Three"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="The Beauty And The Beast"
+                   app:layout_constraintTop_toBottomOf="@id/ivMovie_Three"
+                   app:layout_constraintStart_toStartOf="@id/ivMovie_Three"
+                   app:layout_constraintEnd_toEndOf="@id/ivMovie_Three"/>
+           </androidx.constraintlayout.widget.ConstraintLayout>
+       </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_margin="5dp">
+
+                <ImageView
+                    android:id="@+id/ivMovie_Four"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:src="@drawable/draftday"
+                    android:scaleType="fitXY"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintBottom_toTopOf="@id/tvMovie_Four"/>
+
+                <ImageButton
+                    android:id="@+id/imageButton4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_baseline_favorite_border_24"
+                    app:layout_constraintBottom_toBottomOf="@id/ivMovie_Four"
+                    app:layout_constraintEnd_toEndOf="@id/ivMovie_Four" />
+
+                <TextView
+                    android:id="@+id/tvMovie_Four"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Draft Day"
+                    app:layout_constraintTop_toBottomOf="@id/ivMovie_Four"
+                    app:layout_constraintStart_toStartOf="@id/ivMovie_Four"
+                    app:layout_constraintEnd_toEndOf="@id/ivMovie_Four"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="5dp">
+
+                <ImageView
+                    android:id="@+id/ivMovie_Five"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:src="@drawable/cachmeifyoucan"
+                    android:scaleType="fitXY"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"/>
+
+                <ImageButton
+                    android:id="@+id/imageButton5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_baseline_favorite_border_24"
+                    app:layout_constraintBottom_toBottomOf="@id/ivMovie_Five"
+                    app:layout_constraintEnd_toEndOf="@id/ivMovie_Five" />
+
+                <TextView
+                    android:id="@+id/tvMovie_Five"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Catch Me If You Can"
+                    app:layout_constraintTop_toBottomOf="@id/ivMovie_Five"
+                    app:layout_constraintStart_toStartOf="@id/ivMovie_Five"
+                    app:layout_constraintEnd_toEndOf="@id/ivMovie_Five"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="5dp">
+
+                <ImageView
+                    android:id="@+id/ivMovie_Six"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:src="@drawable/thechoice"
+                    android:scaleType="fitXY"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintBottom_toTopOf="@id/tvMovie_Six"/>
+                <ImageButton
+                    android:id="@+id/imageButton6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_baseline_favorite_border_24"
+                    app:layout_constraintBottom_toBottomOf="@id/ivMovie_Six"
+                    app:layout_constraintEnd_toEndOf="@id/ivMovie_Six" />
+
+                <TextView
+                    android:id="@+id/tvMovie_Six"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="The Choice"
+                    app:layout_constraintTop_toBottomOf="@id/ivMovie_Six"
+                    app:layout_constraintStart_toStartOf="@id/ivMovie_Six"
+                    app:layout_constraintEnd_toEndOf="@id/ivMovie_Six"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="5dp">
+
+                <ImageView
+                    android:id="@+id/ivMovie_Seven"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:src="@drawable/firelithe"
+                    android:scaleType="fitXY"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"/>
+
+                <ImageButton
+                    android:id="@+id/imageButton7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_baseline_favorite_border_24"
+                    app:layout_constraintBottom_toBottomOf="@id/ivMovie_Seven"
+                    app:layout_constraintEnd_toEndOf="@id/ivMovie_Seven" />
+
+                <TextView
+                    android:id="@+id/tvMovie_Seven"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Fire Ligthe"
+                    app:layout_constraintTop_toBottomOf="@id/ivMovie_Seven"
+                    app:layout_constraintStart_toStartOf="@id/ivMovie_Seven"
+                    app:layout_constraintEnd_toEndOf="@id/ivMovie_Seven"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="5dp">
+
+                <ImageView
+                    android:id="@+id/ivMovie_Eight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:src="@drawable/parkland"
+                    android:scaleType="fitXY"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"/>
+
+                <ImageButton
+                    android:id="@+id/imageButton8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_baseline_favorite_border_24"
+                    app:layout_constraintBottom_toBottomOf="@id/ivMovie_Eight"
+                    app:layout_constraintEnd_toEndOf="@id/ivMovie_Eight" />
+
+                <TextView
+                    android:id="@+id/tvMovie_Eight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Parkland"
+                    app:layout_constraintTop_toBottomOf="@id/ivMovie_Eight"
+                    app:layout_constraintStart_toStartOf="@id/ivMovie_Eight"
+                    app:layout_constraintEnd_toEndOf="@id/ivMovie_Eight"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="5dp">
+
+                <ImageView
+                    android:id="@+id/ivMovie_Nine"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:src="@drawable/prideandprijudic"
+                    android:scaleType="fitXY"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"/>
+                <ImageButton
+                    android:id="@+id/imageButton9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_baseline_favorite_border_24"
+                    app:layout_constraintBottom_toBottomOf="@id/ivMovie_Nine"
+                    app:layout_constraintEnd_toEndOf="@id/ivMovie_Nine" />
+
+                <TextView
+                    android:id="@+id/tvMovie_Nine"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pride And Prejudice"
+                    app:layout_constraintTop_toBottomOf="@id/ivMovie_Nine"
+                    app:layout_constraintStart_toStartOf="@id/ivMovie_Nine"
+                    app:layout_constraintEnd_toEndOf="@id/ivMovie_Nine"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="5dp">
+
+                <ImageView
+                    android:id="@+id/ivMovie_Ten"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:src="@drawable/twelveangrymen"
+                    android:scaleType="fitXY"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"/>
+
+                <ImageButton
+                    android:id="@+id/imageButton10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_baseline_favorite_border_24"
+                    app:layout_constraintBottom_toBottomOf="@id/ivMovie_Ten"
+                    app:layout_constraintEnd_toEndOf="@id/ivMovie_Ten" />
+
+                <TextView
+                    android:id="@+id/tvMovie_Ten"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="12 Angry Men"
+                    app:layout_constraintTop_toBottomOf="@id/ivMovie_Ten"
+                    app:layout_constraintStart_toStartOf="@id/ivMovie_Ten"
+                    app:layout_constraintEnd_toEndOf="@id/ivMovie_Ten"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="5dp">
+
+                <ImageView
+                    android:id="@+id/ivMovie_Eleven"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:src="@drawable/seven"
+                    android:scaleType="fitXY"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"/>
+
+                <ImageButton
+                    android:id="@+id/imageButton11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_baseline_favorite_border_24"
+                    app:layout_constraintBottom_toBottomOf="@id/ivMovie_Eleven"
+                    app:layout_constraintEnd_toEndOf="@id/ivMovie_Eleven" />
+
+                <TextView
+                    android:id="@+id/tvMovie_Eleven"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Seven"
+                    app:layout_constraintTop_toBottomOf="@id/ivMovie_Eleven"
+                    app:layout_constraintStart_toStartOf="@id/ivMovie_Eleven"
+                    app:layout_constraintEnd_toEndOf="@id/ivMovie_Eleven"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="5dp">
+
+                <ImageView
+                    android:id="@+id/ivMovie_Twelve"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:src="@drawable/thegreenmile"
+                    android:scaleType="fitXY"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"/>
+                <ImageButton
+                    android:id="@+id/imageButton12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_baseline_favorite_border_24"
+                    app:layout_constraintBottom_toBottomOf="@id/ivMovie_Twelve"
+                    app:layout_constraintEnd_toEndOf="@id/ivMovie_Twelve" />
+
+                <TextView
+                    android:id="@+id/tvMovie_Twelve"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="The Green Mile"
+                    app:layout_constraintTop_toBottomOf="@id/ivMovie_Twelve"
+                    app:layout_constraintStart_toStartOf="@id/ivMovie_Twelve"
+                    app:layout_constraintEnd_toEndOf="@id/ivMovie_Twelve"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </TableRow>
+    </TableLayout>
+</ScrollView>
