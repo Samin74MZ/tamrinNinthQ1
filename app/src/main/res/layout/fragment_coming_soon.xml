@@ -1,6 +1,137 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".ComingSoonFragment"/>
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ComingSoonFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="60dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="5dp">
+
+            <ImageView
+                android:id="@+id/ivOne"
+                android:layout_width="300dp"
+                android:layout_height="200dp"
+                android:scaleType="fitXY"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:src="@drawable/greyhound"
+                app:srcCompat="@drawable/greyhound"
+                />
+
+            <ImageButton
+                android:id="@+id/iBtn1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_share_24"
+                tools:srcCompat="@drawable/ic_baseline_share_24"
+                android:backgroundTintMode="multiply"
+                app:layout_constraintBottom_toBottomOf="@id/ivOne"
+                app:layout_constraintEnd_toEndOf="@id/ivOne" />
+
+            <TextView
+                android:id="@+id/tvOne"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Greyhound"
+                android:textAlignment="center"
+                app:layout_constraintTop_toBottomOf="@id/ivOne"
+                app:layout_constraintStart_toStartOf="@id/ivOne"
+                app:layout_constraintEnd_toEndOf="@id/ivOne"
+
+             />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="5dp">
+
+            <ImageView
+                android:id="@+id/ivTwe"
+                android:layout_width="300dp"
+                android:layout_height="200dp"
+                android:src="@drawable/thecircle"
+                app:srcCompat="@drawable/thecircle"
+                android:scaleType="fitXY"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                />
+
+            <ImageButton
+                android:id="@+id/iBtn2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_share_24"
+                app:layout_constraintBottom_toBottomOf="@id/ivTwe"
+                app:layout_constraintEnd_toEndOf="@id/ivTwe"
+                />
+
+            <TextView
+                android:id="@+id/tvTwe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="The Circle"
+                android:textAlignment="center"
+                app:layout_constraintEnd_toEndOf="@id/ivTwe"
+                app:layout_constraintStart_toStartOf="@id/ivTwe"
+                app:layout_constraintTop_toBottomOf="@id/ivTwe"
+             />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="5dp">
+
+            <ImageView
+                android:id="@+id/ivThree"
+                android:layout_width="300dp"
+                android:layout_height="200dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/sully"
+                app:srcCompat="@drawable/sully"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                />
+            <ImageButton
+                android:id="@+id/imageButton3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_share_24"
+                app:layout_constraintBottom_toBottomOf="@id/ivThree"
+                app:layout_constraintEnd_toEndOf="@id/ivThree"
+                />
+
+            <TextView
+                android:id="@+id/tvThree"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sully"
+                android:textAlignment="center"
+                app:layout_constraintTop_toBottomOf="@id/ivThree"
+                app:layout_constraintEnd_toEndOf="@id/ivThree"
+                app:layout_constraintStart_toStartOf="@id/ivThree"
+
+                />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+</ScrollView>

@@ -5,15 +5,19 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".HomeFragment">
-    <TableLayout
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:gravity="center"
+        android:orientation="vertical"
         android:layout_gravity="center"
         >
-       <TableRow
+       <LinearLayout
            android:layout_width="match_parent"
            android:layout_height="match_parent"
+           android:orientation="horizontal"
+           android:layout_weight="1"
            android:gravity="center">
            <androidx.constraintlayout.widget.ConstraintLayout
                android:layout_width="wrap_content"
@@ -23,12 +27,13 @@
 
                <ImageView
                    android:id="@+id/ivMovie_One"
-                   android:layout_width="wrap_content"
-                   android:layout_height="wrap_content"
-                   tools:src="@drawable/hoteltransylvania"
+                   android:layout_width="100dp"
+                   android:layout_height="100dp"
                    android:scaleType="fitXY"
+                   app:layout_constraintStart_toStartOf="parent"
                    app:layout_constraintTop_toTopOf="parent"
-                   app:layout_constraintStart_toStartOf="parent"/>
+                   app:srcCompat="@drawable/hoteltransylvania"
+                   tools:src="@drawable/hoteltransylvania" />
 
                <ImageButton
                    android:id="@+id/imageButton1"
@@ -56,12 +61,13 @@
 
                <ImageView
                    android:id="@+id/ivMovie_Twe"
-                   android:layout_width="wrap_content"
-                   android:layout_height="wrap_content"
-                   tools:src="@drawable/thebossbaby"
+                   android:layout_width="100dp"
+                   android:layout_height="100dp"
                    android:scaleType="fitXY"
+                   app:layout_constraintStart_toStartOf="parent"
                    app:layout_constraintTop_toTopOf="parent"
-                   app:layout_constraintStart_toStartOf="parent"/>
+                   app:srcCompat="@drawable/thebossbaby"
+                   tools:src="@drawable/thebossbaby" />
 
                <ImageButton
                    android:id="@+id/imageButton2"
@@ -88,12 +94,13 @@
 
                <ImageView
                    android:id="@+id/ivMovie_Three"
-                   android:layout_width="wrap_content"
-                   android:layout_height="wrap_content"
+                   android:layout_width="100dp"
+                   android:layout_height="100dp"
                    android:scaleType="fitXY"
-                   tools:src="@drawable/thebeautyandthebeast"
+                   app:layout_constraintStart_toStartOf="parent"
                    app:layout_constraintTop_toTopOf="parent"
-                   app:layout_constraintStart_toStartOf="parent"/>
+                   app:srcCompat="@drawable/thebeautyandthebeast"
+                   tools:src="@drawable/thebeautyandthebeast" />
                <ImageButton
                    android:id="@+id/imageButton3"
                    android:layout_width="wrap_content"
@@ -111,10 +118,11 @@
                    app:layout_constraintStart_toStartOf="@id/ivMovie_Three"
                    app:layout_constraintEnd_toEndOf="@id/ivMovie_Three"/>
            </androidx.constraintlayout.widget.ConstraintLayout>
-       </TableRow>
-        <TableRow
+       </LinearLayout>
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:orientation="horizontal"
             android:layout_weight="1"
             android:gravity="center">
             <androidx.constraintlayout.widget.ConstraintLayout
@@ -125,13 +133,14 @@
 
                 <ImageView
                     android:id="@+id/ivMovie_Four"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    tools:src="@drawable/draftday"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
                     android:scaleType="fitXY"
-                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toTopOf="@id/tvMovie_Four"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintBottom_toTopOf="@id/tvMovie_Four"/>
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/draftday"
+                    tools:src="@drawable/draftday" />
 
                 <ImageButton
                     android:id="@+id/imageButton4"
@@ -159,12 +168,13 @@
 
                 <ImageView
                     android:id="@+id/ivMovie_Five"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    tools:src="@drawable/cachmeifyoucan"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
                     android:scaleType="fitXY"
+                    app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"/>
+                    app:srcCompat="@drawable/cachmeifyoucan"
+                    tools:src="@drawable/cachmeifyoucan" />
 
                 <ImageButton
                     android:id="@+id/imageButton5"
@@ -191,13 +201,14 @@
 
                 <ImageView
                     android:id="@+id/ivMovie_Six"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    tools:src="@drawable/thechoice"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
                     android:scaleType="fitXY"
-                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toTopOf="@id/tvMovie_Six"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintBottom_toTopOf="@id/tvMovie_Six"/>
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/thechoice"
+                    tools:src="@drawable/thechoice" />
                 <ImageButton
                     android:id="@+id/imageButton6"
                     android:layout_width="wrap_content"
@@ -215,10 +226,12 @@
                     app:layout_constraintStart_toStartOf="@id/ivMovie_Six"
                     app:layout_constraintEnd_toEndOf="@id/ivMovie_Six"/>
             </androidx.constraintlayout.widget.ConstraintLayout>
-        </TableRow>
-        <TableRow
+        </LinearLayout>
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight="1"
             android:gravity="center">
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="wrap_content"
@@ -228,12 +241,13 @@
 
                 <ImageView
                     android:id="@+id/ivMovie_Seven"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    tools:src="@drawable/firelithe"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
                     android:scaleType="fitXY"
+                    app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"/>
+                    app:srcCompat="@drawable/firelithe"
+                    tools:src="@drawable/firelithe" />
 
                 <ImageButton
                     android:id="@+id/imageButton7"
@@ -261,12 +275,13 @@
 
                 <ImageView
                     android:id="@+id/ivMovie_Eight"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    tools:src="@drawable/parkland"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
                     android:scaleType="fitXY"
+                    app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"/>
+                    app:srcCompat="@drawable/parkland"
+                    tools:src="@drawable/parkland" />
 
                 <ImageButton
                     android:id="@+id/imageButton8"
@@ -293,12 +308,13 @@
 
                 <ImageView
                     android:id="@+id/ivMovie_Nine"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    tools:src="@drawable/prideandprijudic"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
                     android:scaleType="fitXY"
+                    app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"/>
+                    app:srcCompat="@drawable/prideandprijudic"
+                    tools:src="@drawable/prideandprijudic" />
                 <ImageButton
                     android:id="@+id/imageButton9"
                     android:layout_width="wrap_content"
@@ -316,8 +332,8 @@
                     app:layout_constraintStart_toStartOf="@id/ivMovie_Nine"
                     app:layout_constraintEnd_toEndOf="@id/ivMovie_Nine"/>
             </androidx.constraintlayout.widget.ConstraintLayout>
-        </TableRow>
-        <TableRow
+        </LinearLayout>
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -331,12 +347,13 @@
 
                 <ImageView
                     android:id="@+id/ivMovie_Ten"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    tools:src="@drawable/twelveangrymen"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
                     android:scaleType="fitXY"
+                    app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"/>
+                    app:srcCompat="@drawable/twelveangrymen"
+                    tools:src="@drawable/twelveangrymen" />
 
                 <ImageButton
                     android:id="@+id/imageButton10"
@@ -364,12 +381,13 @@
 
                 <ImageView
                     android:id="@+id/ivMovie_Eleven"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    tools:src="@drawable/seven"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
                     android:scaleType="fitXY"
+                    app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"/>
+                    app:srcCompat="@drawable/seven"
+                    tools:src="@drawable/seven" />
 
                 <ImageButton
                     android:id="@+id/imageButton11"
@@ -396,12 +414,13 @@
 
                 <ImageView
                     android:id="@+id/ivMovie_Twelve"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    tools:src="@drawable/thegreenmile"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
                     android:scaleType="fitXY"
+                    app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"/>
+                    app:srcCompat="@drawable/thegreenmile"
+                    tools:src="@drawable/thegreenmile" />
                 <ImageButton
                     android:id="@+id/imageButton12"
                     android:layout_width="wrap_content"
@@ -419,6 +438,6 @@
                     app:layout_constraintStart_toStartOf="@id/ivMovie_Twelve"
                     app:layout_constraintEnd_toEndOf="@id/ivMovie_Twelve"/>
             </androidx.constraintlayout.widget.ConstraintLayout>
-        </TableRow>
-    </TableLayout>
+        </LinearLayout>
+    </LinearLayout>
 </ScrollView>

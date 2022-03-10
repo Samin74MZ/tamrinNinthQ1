@@ -16,7 +16,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:navGraph="@navigation/nav_graph"
-        tools:layout="@layout/fragment_home"
-         />
+        app:navGraph="@navigation/nav_graph"/>
+<!--        tools:layout="@layout/fragment_home"-->
+
 </androidx.constraintlayout.widget.ConstraintLayout>
