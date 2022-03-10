@@ -9,7 +9,7 @@
         android:icon="@drawable/ic_baseline_favorite_24"
         android:iconTintMode="multiply"
         />
-    <item android:id="@+id/coming_soon"
+    <item android:id="@+id/comingsoon"
         android:title="Coming soon"
         android:icon="@drawable/comingsoon"/>
     <item android:id="@+id/profile"
