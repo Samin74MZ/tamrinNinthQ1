@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
     <item android:id="@+id/home"
         android:title="Home"
         android:icon="@drawable/ic_baseline_home_24"
@@ -11,7 +12,8 @@
         />
     <item android:id="@+id/comingsoon"
         android:title="Coming soon"
-        android:icon="@drawable/comingsoon"/>
+        android:icon="@drawable/comingsoon"
+        />
     <item android:id="@+id/profile"
         android:title="Profile"
         android:icon="@drawable/ic_baseline_face_24"/>
