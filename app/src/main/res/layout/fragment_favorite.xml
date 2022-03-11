@@ -3,17 +3,39 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="match_parent"
     android:contentDescription="@string/app_name"
     tools:context=".FavoriteFragment">
 
+   <ScrollView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       >
+
    <TableLayout
+       android:id="@+id/tabLayout"
        android:layout_width="match_parent"
        android:layout_height="match_parent"
        android:layout_gravity="center"
        android:gravity="center">
 
 
+      <TableRow
+          android:id="@+id/top_s1"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent" />
+      <TableRow
+          android:id="@+id/top_s2"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent" />
+      <TableRow
+          android:id="@+id/top_s3"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent" />
+      <TableRow
+          android:id="@+id/top_s4"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent" />
       <TableRow
           android:id="@+id/r1"
           android:layout_width="match_parent"
@@ -340,5 +362,5 @@
       </TableRow>
 
    </TableLayout>
-
+   </ScrollView>
 </ScrollView>
