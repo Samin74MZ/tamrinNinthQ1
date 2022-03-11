@@ -5,6 +5,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".HomeFragment">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -13,7 +17,8 @@
         android:orientation="vertical"
         android:layout_gravity="center"
         >
-       <LinearLayout
+
+        <LinearLayout
            android:layout_width="match_parent"
            android:layout_height="match_parent"
            android:orientation="horizontal"
@@ -53,6 +58,7 @@
                    android:layout_width="wrap_content"
                    android:layout_height="wrap_content"
                    android:text="Hotel Transylvania"
+                   android:textAlignment="center"
                    app:layout_constraintTop_toBottomOf="@id/ivMovie_One"
                    app:layout_constraintStart_toStartOf="@id/ivMovie_One"
                    app:layout_constraintEnd_toEndOf="@id/ivMovie_One"/>
@@ -92,6 +98,7 @@
                    android:layout_width="wrap_content"
                    android:layout_height="wrap_content"
                    android:text="The Boss Baby"
+                   android:textAlignment="center"
                    app:layout_constraintTop_toBottomOf="@id/ivMovie_Twe"
                    app:layout_constraintStart_toStartOf="@id/ivMovie_Twe"
                    app:layout_constraintEnd_toEndOf="@id/ivMovie_Twe"/>
@@ -107,6 +114,7 @@
                    android:layout_width="100dp"
                    android:layout_height="100dp"
                    android:scaleType="fitXY"
+
                    app:layout_constraintStart_toStartOf="parent"
                    app:layout_constraintTop_toTopOf="parent"
                    app:srcCompat="@drawable/thebeautyandthebeast"
@@ -123,14 +131,18 @@
                    app:iconTint="@color/red"
                    app:layout_constraintBottom_toBottomOf="@id/ivMovie_Three"
                    app:layout_constraintEnd_toEndOf="@id/ivMovie_Three" />
+
                <TextView
                    android:id="@+id/tvMovie_Three"
                    android:layout_width="wrap_content"
                    android:layout_height="wrap_content"
                    android:text="The Beauty And The Beast"
-                   app:layout_constraintTop_toBottomOf="@id/ivMovie_Three"
+                   android:textAlignment="center"
+                   android:textSize="13dp"
+                   app:layout_constraintEnd_toEndOf="parent"
+                   app:layout_constraintHorizontal_bias="0.0"
                    app:layout_constraintStart_toStartOf="@id/ivMovie_Three"
-                   app:layout_constraintEnd_toEndOf="@id/ivMovie_Three"/>
+                   app:layout_constraintTop_toBottomOf="@id/ivMovie_Three" />
            </androidx.constraintlayout.widget.ConstraintLayout>
        </LinearLayout>
         <LinearLayout
@@ -179,11 +191,12 @@
                     app:layout_constraintEnd_toEndOf="@id/ivMovie_Four"/>
 
             </androidx.constraintlayout.widget.ConstraintLayout>
+
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:layout_margin="5dp">
+                android:layout_margin="5dp"
+                android:layout_weight="1">
 
                 <ImageView
                     android:id="@+id/ivMovie_Five"
@@ -199,11 +212,11 @@
                     android:id="@+id/imageButton5"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    app:icon="@drawable/ic_baseline_favorite_border_24"
                     android:background="@color/cardview_shadow_end_color"
                     android:src="@drawable/ic_baseline_favorite_border_24"
-                    app:iconPadding="0dp"
+                    app:icon="@drawable/ic_baseline_favorite_border_24"
                     app:iconGravity="end"
+                    app:iconPadding="0dp"
                     app:iconTint="@color/red"
                     app:layout_constraintBottom_toBottomOf="@id/ivMovie_Five"
                     app:layout_constraintEnd_toEndOf="@id/ivMovie_Five" />
@@ -213,10 +226,12 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Catch Me If You Can"
-                    app:layout_constraintTop_toBottomOf="@id/ivMovie_Five"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:textAlignment="center"
                     app:layout_constraintStart_toStartOf="@id/ivMovie_Five"
-                    app:layout_constraintEnd_toEndOf="@id/ivMovie_Five"/>
+                    app:layout_constraintTop_toBottomOf="@id/ivMovie_Five" />
             </androidx.constraintlayout.widget.ConstraintLayout>
+
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -251,9 +266,10 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="The Choice"
+                    android:textAlignment="center"
                     app:layout_constraintTop_toBottomOf="@id/ivMovie_Six"
                     app:layout_constraintStart_toStartOf="@id/ivMovie_Six"
-                    app:layout_constraintEnd_toEndOf="@id/ivMovie_Six"/>
+                    app:layout_constraintEnd_toEndOf="parent"/>
             </androidx.constraintlayout.widget.ConstraintLayout>
         </LinearLayout>
         <LinearLayout
@@ -372,9 +388,10 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Pride And Prejudice"
+                    android:textAlignment="center"
                     app:layout_constraintTop_toBottomOf="@id/ivMovie_Nine"
                     app:layout_constraintStart_toStartOf="@id/ivMovie_Nine"
-                    app:layout_constraintEnd_toEndOf="@id/ivMovie_Nine"/>
+                    app:layout_constraintEnd_toEndOf="parent"/>
             </androidx.constraintlayout.widget.ConstraintLayout>
         </LinearLayout>
         <LinearLayout
@@ -498,4 +515,5 @@
             </androidx.constraintlayout.widget.ConstraintLayout>
         </LinearLayout>
     </LinearLayout>
+    </ScrollView>
 </ScrollView>
