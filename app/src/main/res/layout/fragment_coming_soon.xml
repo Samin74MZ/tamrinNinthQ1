@@ -18,7 +18,7 @@
         android:orientation="vertical"
         android:layout_gravity="center"
         android:gravity="center"
-        android:layout_marginTop="60dp">
+        >
 
 
         <androidx.constraintlayout.widget.ConstraintLayout
