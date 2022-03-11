@@ -35,11 +35,16 @@
                    app:srcCompat="@drawable/hoteltransylvania"
                    tools:src="@drawable/hoteltransylvania" />
 
-               <ImageButton
+               <com.google.android.material.button.MaterialButton
                    android:id="@+id/imageButton1"
                    android:layout_width="wrap_content"
                    android:layout_height="wrap_content"
+                   app:icon="@drawable/ic_baseline_favorite_border_24"
+                   android:background="@color/cardview_shadow_end_color"
                    android:src="@drawable/ic_baseline_favorite_border_24"
+                   app:iconPadding="0dp"
+                   app:iconGravity="end"
+                   app:iconTint="@color/design_default_color_error"
                    app:layout_constraintBottom_toBottomOf="@id/ivMovie_One"
                    app:layout_constraintEnd_toEndOf="@id/ivMovie_One" />
 
@@ -69,11 +74,16 @@
                    app:srcCompat="@drawable/thebossbaby"
                    tools:src="@drawable/thebossbaby" />
 
-               <ImageButton
+               <com.google.android.material.button.MaterialButton
                    android:id="@+id/imageButton2"
                    android:layout_width="wrap_content"
                    android:layout_height="wrap_content"
+                   app:icon="@drawable/ic_baseline_favorite_border_24"
+                   android:background="@color/cardview_shadow_end_color"
                    android:src="@drawable/ic_baseline_favorite_border_24"
+                   app:iconPadding="0dp"
+                   app:iconGravity="end"
+                   app:iconTint="@color/design_default_color_error"
                    app:layout_constraintBottom_toBottomOf="@id/ivMovie_Twe"
                    app:layout_constraintEnd_toEndOf="@id/ivMovie_Twe" />
 
@@ -101,14 +111,18 @@
                    app:layout_constraintTop_toTopOf="parent"
                    app:srcCompat="@drawable/thebeautyandthebeast"
                    tools:src="@drawable/thebeautyandthebeast" />
-               <ImageButton
+               <com.google.android.material.button.MaterialButton
                    android:id="@+id/imageButton3"
                    android:layout_width="wrap_content"
                    android:layout_height="wrap_content"
+                   app:icon="@drawable/ic_baseline_favorite_border_24"
+                   android:background="@color/cardview_shadow_end_color"
                    android:src="@drawable/ic_baseline_favorite_border_24"
+                   app:iconPadding="0dp"
+                   app:iconGravity="end"
+                   app:iconTint="@color/red"
                    app:layout_constraintBottom_toBottomOf="@id/ivMovie_Three"
                    app:layout_constraintEnd_toEndOf="@id/ivMovie_Three" />
-
                <TextView
                    android:id="@+id/tvMovie_Three"
                    android:layout_width="wrap_content"
@@ -142,11 +156,16 @@
                     app:srcCompat="@drawable/draftday"
                     tools:src="@drawable/draftday" />
 
-                <ImageButton
+                <com.google.android.material.button.MaterialButton
                     android:id="@+id/imageButton4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    app:icon="@drawable/ic_baseline_favorite_border_24"
+                    android:background="@color/cardview_shadow_end_color"
                     android:src="@drawable/ic_baseline_favorite_border_24"
+                    app:iconPadding="0dp"
+                    app:iconGravity="end"
+                    app:iconTint="@color/design_default_color_error"
                     app:layout_constraintBottom_toBottomOf="@id/ivMovie_Four"
                     app:layout_constraintEnd_toEndOf="@id/ivMovie_Four" />
 
@@ -176,11 +195,16 @@
                     app:srcCompat="@drawable/cachmeifyoucan"
                     tools:src="@drawable/cachmeifyoucan" />
 
-                <ImageButton
+                <com.google.android.material.button.MaterialButton
                     android:id="@+id/imageButton5"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    app:icon="@drawable/ic_baseline_favorite_border_24"
+                    android:background="@color/cardview_shadow_end_color"
                     android:src="@drawable/ic_baseline_favorite_border_24"
+                    app:iconPadding="0dp"
+                    app:iconGravity="end"
+                    app:iconTint="@color/red"
                     app:layout_constraintBottom_toBottomOf="@id/ivMovie_Five"
                     app:layout_constraintEnd_toEndOf="@id/ivMovie_Five" />
 
@@ -209,11 +233,16 @@
                     app:layout_constraintTop_toTopOf="parent"
                     app:srcCompat="@drawable/thechoice"
                     tools:src="@drawable/thechoice" />
-                <ImageButton
+                <com.google.android.material.button.MaterialButton
                     android:id="@+id/imageButton6"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    app:icon="@drawable/ic_baseline_favorite_border_24"
+                    android:background="@color/cardview_shadow_end_color"
                     android:src="@drawable/ic_baseline_favorite_border_24"
+                    app:iconPadding="0dp"
+                    app:iconGravity="end"
+                    app:iconTint="@color/design_default_color_error"
                     app:layout_constraintBottom_toBottomOf="@id/ivMovie_Six"
                     app:layout_constraintEnd_toEndOf="@id/ivMovie_Six" />
 
@@ -249,11 +278,16 @@
                     app:srcCompat="@drawable/firelithe"
                     tools:src="@drawable/firelithe" />
 
-                <ImageButton
+                <com.google.android.material.button.MaterialButton
                     android:id="@+id/imageButton7"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    app:icon="@drawable/ic_baseline_favorite_border_24"
+                    android:background="@color/cardview_shadow_end_color"
                     android:src="@drawable/ic_baseline_favorite_border_24"
+                    app:iconPadding="0dp"
+                    app:iconGravity="end"
+                    app:iconTint="@color/design_default_color_error"
                     app:layout_constraintBottom_toBottomOf="@id/ivMovie_Seven"
                     app:layout_constraintEnd_toEndOf="@id/ivMovie_Seven" />
 
@@ -283,11 +317,16 @@
                     app:srcCompat="@drawable/parkland"
                     tools:src="@drawable/parkland" />
 
-                <ImageButton
+                <com.google.android.material.button.MaterialButton
                     android:id="@+id/imageButton8"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    app:icon="@drawable/ic_baseline_favorite_border_24"
+                    android:background="@color/cardview_shadow_end_color"
                     android:src="@drawable/ic_baseline_favorite_border_24"
+                    app:iconPadding="0dp"
+                    app:iconGravity="end"
+                    app:iconTint="@color/design_default_color_error"
                     app:layout_constraintBottom_toBottomOf="@id/ivMovie_Eight"
                     app:layout_constraintEnd_toEndOf="@id/ivMovie_Eight" />
 
@@ -315,11 +354,16 @@
                     app:layout_constraintTop_toTopOf="parent"
                     app:srcCompat="@drawable/prideandprijudic"
                     tools:src="@drawable/prideandprijudic" />
-                <ImageButton
+                <com.google.android.material.button.MaterialButton
                     android:id="@+id/imageButton9"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    app:icon="@drawable/ic_baseline_favorite_border_24"
+                    android:background="@color/cardview_shadow_end_color"
                     android:src="@drawable/ic_baseline_favorite_border_24"
+                    app:iconPadding="0dp"
+                    app:iconGravity="end"
+                    app:iconTint="@color/red"
                     app:layout_constraintBottom_toBottomOf="@id/ivMovie_Nine"
                     app:layout_constraintEnd_toEndOf="@id/ivMovie_Nine" />
 
@@ -355,11 +399,16 @@
                     app:srcCompat="@drawable/twelveangrymen"
                     tools:src="@drawable/twelveangrymen" />
 
-                <ImageButton
+                <com.google.android.material.button.MaterialButton
                     android:id="@+id/imageButton10"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    app:icon="@drawable/ic_baseline_favorite_border_24"
+                    android:background="@color/cardview_shadow_end_color"
                     android:src="@drawable/ic_baseline_favorite_border_24"
+                    app:iconPadding="0dp"
+                    app:iconGravity="end"
+                    app:iconTint="@color/red"
                     app:layout_constraintBottom_toBottomOf="@id/ivMovie_Ten"
                     app:layout_constraintEnd_toEndOf="@id/ivMovie_Ten" />
 
@@ -389,12 +438,16 @@
                     app:srcCompat="@drawable/seven"
                     tools:src="@drawable/seven" />
 
-                <ImageButton
+                <com.google.android.material.button.MaterialButton
                     android:id="@+id/imageButton11"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    app:icon="@drawable/ic_baseline_favorite_border_24"
+                    android:background="@color/cardview_shadow_end_color"
                     android:src="@drawable/ic_baseline_favorite_border_24"
-                    app:layout_constraintBottom_toBottomOf="@id/ivMovie_Eleven"
+                    app:iconPadding="0dp"
+                    app:iconGravity="end"
+                    app:iconTint="@color/design_default_color_error" app:layout_constraintBottom_toBottomOf="@id/ivMovie_Eleven"
                     app:layout_constraintEnd_toEndOf="@id/ivMovie_Eleven" />
 
                 <TextView
@@ -421,11 +474,16 @@
                     app:layout_constraintTop_toTopOf="parent"
                     app:srcCompat="@drawable/thegreenmile"
                     tools:src="@drawable/thegreenmile" />
-                <ImageButton
+                <com.google.android.material.button.MaterialButton
                     android:id="@+id/imageButton12"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    app:icon="@drawable/ic_baseline_favorite_border_24"
+                    android:background="@color/cardview_shadow_end_color"
                     android:src="@drawable/ic_baseline_favorite_border_24"
+                    app:iconPadding="0dp"
+                    app:iconGravity="end"
+                    app:iconTint="@color/red"
                     app:layout_constraintBottom_toBottomOf="@id/ivMovie_Twelve"
                     app:layout_constraintEnd_toEndOf="@id/ivMovie_Twelve" />
 
